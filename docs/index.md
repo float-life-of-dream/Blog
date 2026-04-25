@@ -16,10 +16,10 @@ This is where I document my programming journey — tips, tutorials, project wal
 
 ### What I Write About
 
-- :fontawesome-brands-python: **Python** — tips, patterns, and deep dives
-- :material-code-braces: **Software Engineering** — best practices, architecture, and code quality
-- :material-tools: **DevOps & Tooling** — making the dev workflow smoother
-- :material-git: **Open Source** — contributing to and learning from the community
+- fontawesome-brands-python: **Python** — tips, patterns, and deep dives
+- material-code-braces: **Software Engineering** — best practices, architecture, and code quality
+- material-tools: **DevOps & Tooling** — making the dev workflow smoother
+- material-git: **Open Source** — contributing to and learning from the community
 
 ---
 

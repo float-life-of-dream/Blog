@@ -1,11 +1,19 @@
-site_name: My Programming Blog
+site_name: 且翟子木的博客
 site_description: A blog about programming, Python, and software development
-site_author: liyao
+site_author: float-life-of-dream
 site_url: https://example.com/blog
+repo_name: blog
+repo_url: https://github.com/float-life-of-dream/blog
+copyright: "Copyright © 2024 float-life-of-dream. All rights reserved."
+edit_uri_template: "edit/main/{path}"
 
 theme:
   name: material
-  language: en
+  language: zh
+  logo: images/logo.jpg
+  favicon: images/favicon.ico
+  include_search_page: false
+  search_index_only: true
   palette:
     - scheme: default
       primary: indigo
@@ -62,6 +70,6 @@ nav:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/
+      link: https://github.com/float-life-of-dream
       name: GitHub Profile
   analytics: {}
