@@ -66,6 +66,9 @@ markdown_extensions:
 nav:
   - 首页: index.md
   - 博客: blog/index.md
+  - 项目: projects/index.md
+  - 算法: algorithms/index.md
+  - 技术栈: techstack/index.md
 
 extra:
   social:
