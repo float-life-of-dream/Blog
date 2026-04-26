@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://example.com/blog/</loc>
-         <lastmod>2026-04-25</lastmod>
-    </url>
-    <url>
-         <loc>https://example.com/blog/blog/posts/code-review-best-practices/</loc>
-         <lastmod>2026-04-25</lastmod>
-    </url>
-    <url>
-         <loc>https://example.com/blog/blog/posts/getting-started-with-mkdocs-material/</loc>
-         <lastmod>2026-04-25</lastmod>
-    </url>
-    <url>
-         <loc>https://example.com/blog/blog/posts/python-decorators-explained/</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-26</lastmod>
     </url>
     <url>
          <loc>https://example.com/blog/blog/</loc>
-         <lastmod>2026-04-25</lastmod>
+         <lastmod>2026-04-26</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/blog/blog/posts/code-review-best-practices/</loc>
+         <lastmod>2026-04-26</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/blog/blog/posts/getting-started-with-mkdocs-material/</loc>
+         <lastmod>2026-04-26</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/blog/blog/posts/python-decorators-explained/</loc>
+         <lastmod>2026-04-26</lastmod>
     </url>
 </urlset>

@@ -4,25 +4,25 @@ hide:
   - toc
 ---
 
-# Hi, I'm Liyao
+# 
 
-Welcome to my programming blog! I write about **Python**, **software engineering**, and things I learn along the way.
-
----
-
-## About This Blog
-
-This is where I document my programming journey — tips, tutorials, project walkthroughs, and lessons learned. I believe in writing things down to understand them better, and sharing knowledge along the way.
-
-### What I Write About
-
-- fontawesome-brands-python: **Python** — tips, patterns, and deep dives
-- material-code-braces: **Software Engineering** — best practices, architecture, and code quality
-- material-tools: **DevOps & Tooling** — making the dev workflow smoother
-- material-git: **Open Source** — contributing to and learning from the community
+欢迎来到我的编程博客！我在这里分享 **Python**、**软件工程** 以及编程学习路上的点点滴滴。
 
 ---
 
-## Recent Posts
+## 关于本博客
 
-Check out the [blog](./blog/) for all posts, or jump directly to a recent one.
+这是我记录编程旅程的地方 —— 包括技巧总结、教程、项目复盘和经验教训。我相信把学到的东西写下来，既能加深理解，也能与他人分享知识。
+
+### 我会写些什么
+
+-  **Python** — 使用技巧、设计模式和深度探索
+-  **软件工程** — 最佳实践、架构设计和代码质量
+-  **DevOps 与工具** — 让开发工作流更加顺畅
+-  **开源** — 参与开源社区，向社区学习
+
+---
+
+## 最新文章
+
+查看 [博客](./blog/) 获取全部文章，或直接浏览最近的文章。

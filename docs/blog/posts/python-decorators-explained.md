@@ -2,28 +2,28 @@
 date: 2026-04-22
 authors:
   - liyao
-title: Python Decorators Explained Simply
+title: 深入浅出 Python 装饰器
 slug: python-decorators-explained
 description: >
-  Demystifying Python decorators — what they are, how they work, and when to use them.
+  解密 Python 装饰器 —— 它是什么、如何工作、什么时候该用它。
 categories:
   - Python
 ---
 
-# Python Decorators Explained Simply
+# 深入浅出 Python 装饰器
 
-Decorators are one of Python's most elegant features, but they can be confusing at first. Let's break them down.
+装饰器是 Python 最优雅的特性之一，但初学者往往觉得难以理解。让我们把它拆开来看。
 
-## What Is a Decorator?
+## 什么是装饰器？
 
-A decorator is simply a function that takes another function and extends its behavior without modifying it explicitly.
+装饰器本质上是一个函数，它接收另一个函数作为参数，在不修改原函数的情况下扩展其功能。
 
 ```python
 def my_decorator(func):
     def wrapper():
-        print("Something before the function")
+        print("函数执行前")
         func()
-        print("Something after the function")
+        print("函数执行后")
     return wrapper
 
 @my_decorator
@@ -33,23 +33,23 @@ def say_hello():
 say_hello()
 ```
 
-Output:
+输出：
 
 ```
-Something before the function
+函数执行前
 Hello!
-Something after the function
+函数执行后
 ```
 
-## How It Works
+## 原理揭秘
 
-The `@my_decorator` syntax is syntactic sugar for:
+`@my_decorator` 语法只是以下代码的语法糖：
 
 ```python
 say_hello = my_decorator(say_hello)
 ```
 
-## A Real-World Example: Timing Functions
+## 实战示例：计时装饰器
 
 ```python
 import time
@@ -61,7 +61,7 @@ def timer(func):
         start = time.perf_counter()
         result = func(*args, **kwargs)
         end = time.perf_counter()
-        print(f"{func.__name__} took {end - start:.4f}s")
+        print(f"{func.__name__} 耗时 {end - start:.4f} 秒")
         return result
     return wrapper
 
@@ -73,20 +73,20 @@ def compute_heavy():
 compute_heavy()
 ```
 
-## Why Use `@wraps`?
+## 为什么用 `@wraps`？
 
-Without `functools.wraps`, the decorated function loses its metadata — `__name__`, `__doc__`, etc. Always use it.
+不使用 `functools.wraps` 的话，被装饰的函数会丢失元数据 —— `__name__`、`__doc__` 等。所以务必加上它。
 
-## When to Use Decorators
+## 装饰器的应用场景
 
-- **Logging** — log function calls automatically
-- **Caching** — `@lru_cache` for memoization
-- **Authorization** — check permissions before executing
-- **Validation** — validate arguments before processing
-- **Retry logic** — retry on failure with backoff
+- **日志记录** — 自动记录函数调用
+- **缓存** — 使用 `@lru_cache` 实现记忆化
+- **权限校验** — 在执行前检查权限
+- **参数验证** — 处理前校验参数
+- **重试机制** — 失败时按退避策略重试
 
-Decorators let you separate cross-cutting concerns cleanly. Once you understand them, you'll find uses everywhere.
+装饰器让你能干净地分离横切关注点。一旦掌握了它，你会发现到处都能用上。
 
 ---
 
-*Got questions about decorators? Let me know in the comments!*
+*对装饰器有疑问？欢迎在评论区交流！*

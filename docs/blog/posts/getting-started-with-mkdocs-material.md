@@ -2,78 +2,79 @@
 date: 2026-04-20
 authors:
   - liyao
-title: Getting Started with MkDocs Material Blog
+title: MkDocs Material 博客搭建指南
 slug: getting-started-mkdocs-material
 description: >
-  A quick guide to setting up a programming blog with MkDocs Material — from installation to your first post.
+  从安装到发布第一篇文章，快速搭建一个使用 MkDocs Material 的编程博客。
 categories:
   - Python
-  - Blogging
+  - 博客
 ---
 
-# Getting Started with MkDocs Material Blog
+# MkDocs Material 博客搭建指南
 
-I recently set up this blog to share my programming journey. Here's a quick overview of how it's built.
+最近搭建了这个博客来记录编程旅程。下面简单介绍一下它的构建方式。
 
-## Why MkDocs Material?
+## 为什么选 MkDocs Material？
 
-[MkDocs Material](https://squidfunk.github.io/mkdocs-material/) is a powerful static site generator built on top of MkDocs. It offers:
+[MkDocs Material](https://squidfunk.github.io/mkdocs-material/) 是一个基于 MkDocs 的强大静态站点生成器。它的优势包括：
 
-- **Markdown-first** — write posts in plain Markdown with YAML frontmatter
-- **Built-in blog plugin** — categories, authors, archives, and pagination out of the box
-- **Beautiful code highlighting** — syntax highlighting with copy buttons
-- **Dark mode** — automatic light/dark theme switching
-- **Fast search** — full-text search with suggestions
+- **纯 Markdown** — 使用 Markdown 和 YAML 元数据编写文章
+- **内置博客插件** — 开箱即用的分类、作者、归档和分页功能
+- **精美的代码高亮** — 带复制按钮的语法高亮
+- **深色模式** — 自动切换浅色/深色主题
+- **快速搜索** — 带建议的全文搜索
 
-## Project Structure
+## 项目结构
 
 ```
 blog/
-├── mkdocs.yml          # Site configuration
+├── mkdocs.yml          # 站点配置
 ├── docs/
-│   ├── index.md        # Homepage
-│   └── posts/          # Blog posts
-│       └── *.md        # Each post is a Markdown file
-└── venv/               # Python virtual environment
+│   ├── index.md        # 首页
+│   └── blog/
+│       └── posts/      # 博客文章
+│           └── *.md    # 每篇文章是一个 Markdown 文件
+└── venv/               # Python 虚拟环境
 ```
 
-## Quick Start
+## 快速开始
 
 ```bash
-# Install dependencies
+# 安装依赖
 pip install mkdocs-material
 
-# Create a new post
-cd docs/posts
+# 创建新文章
+cd docs/blog/posts
 cat > my-post.md << 'EOF'
 ---
 date: 2026-04-25
 authors:
   - liyao
-title: My New Post
+title: 我的新文章
 categories:
-  - General
+  - 通用
 ---
 
-# My New Post
+# 我的新文章
 
-Your content here.
+在这里写下你的内容。
 EOF
 
-# Run the dev server
+# 启动开发服务器
 mkdocs serve
 ```
 
-## What's Next
+## 后续计划
 
-I plan to write about:
+我打算写以下主题：
 
-- Python tips and tricks
-- Software architecture patterns
-- DevOps workflows
-- Open source contributions
+- Python 技巧与窍门
+- 软件架构模式
+- DevOps 工作流
+- 开源贡献
 
-Stay tuned for more posts!
+敬请期待更多文章！
 
 ---
 

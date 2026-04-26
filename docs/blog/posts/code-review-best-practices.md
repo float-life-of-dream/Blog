@@ -2,79 +2,79 @@
 date: 2026-04-24
 authors:
   - liyao
-title: Code Review Best Practices I've Learned
+title: 代码审查最佳实践总结
 slug: code-review-best-practices
 description: >
-  Practical tips for giving and receiving code reviews that are constructive, efficient, and drama-free.
+  如何让代码审查既高效又友好 —— 来自多年实战的实用建议。
 categories:
-  - Software Engineering
+  - 软件工程
 ---
 
-# Code Review Best Practices I've Learned
+# 代码审查最佳实践总结
 
-After years of reviewing code (and having my code reviewed), here are the practices that make reviews productive instead of painful.
+经过多年的代码审查（以及被审查）经验，以下是一些让审查高效而非痛苦的做法。
 
-## As a Reviewer
+## 作为审查者
 
-### 1. Review the Diff, Not the Developer
+### 1. 审查代码，而非审查人
 
-Focus on the code, not the person who wrote it. Use neutral language:
+关注代码本身，而不是写代码的人。使用中立的语言：
 
-| Bad | Good |
+| 不好 | 更好 |
 |-----|------|
-| "You forgot to handle the error" | "What happens when `response` is `null`?" |
-| "This is wrong" | "I think this might miss the edge case where..." |
+| "你忘记处理错误了" | "当 `response` 为 `null` 时会发生什么？" |
+| "这是错的" | "我觉得这里可能漏掉了……的边缘情况" |
 
-### 2. Start with What You Like
+### 2. 先指出好的地方
 
-Pointing out good patterns reinforces them. A quick "Nice use of `defaultdict` here" builds rapport.
+肯定好的模式能强化它们。一句简单的"这里用 `defaultdict` 很巧妙"能拉近距离。
 
-### 3. Distinguish Nitpicks from Blockers
+### 3. 区分小问题和阻塞项
 
-Use labels to set expectations:
+用标签来设定期望：
 
-- **[blocker]** — must fix before merge
-- **[nit]** — stylistic preference, merge at author's discretion
-- **[question]** — I don't understand, please explain
+- **[blocker]** — 必须修改才能合并
+- **[nit]** — 风格偏好，作者可自行决定是否修改
+- **[question]** — 我不太理解，请解释一下
 
-### 4. Don't Review for More Than 60 Minutes
+### 4. 一次审查不超过 60 分钟
 
-After an hour, your attention drifts. Take a break and come back.
+超过一小时后注意力会下降。休息一下再回来。
 
-## As an Author
+## 作为代码作者
 
-### 1. Small PRs Win
+### 1. 小 PR 才是王道
 
-A 200-line PR gets reviewed fast. A 2000-line PR sits for a week. Break big changes into reviewable chunks.
+200 行的 PR 很快就能审完。2000 行的 PR 可能搁置一周。把大改动拆分成可审查的小块。
 
-### 2. Self-Review First
+### 2. 先自审一遍
 
-Before requesting review, go through your own diff. You'll catch half the issues yourself.
+在请求审查之前，自己先过一遍 diff。你会发现一半的问题自己就能揪出来。
 
-### 3. Write a Good Description
+### 3. 写好 PR 描述
 
 ```
-## What
-Add retry logic to the payment API client.
+## 做了什么
+为支付 API 客户端添加重试逻辑。
 
-## Why
-Intermittent network errors were causing ~2% of payment requests to fail.
-This adds exponential backoff retry (3 attempts, max 10s).
+## 为什么
+间歇性网络错误导致约 2% 的支付请求失败。
+本次添加了指数退避重试（最多 3 次，最长 10 秒）。
 
-## Test Plan
-- [x] Unit tests for retry count
-- [x] Integration test with mock server returning 500s
-- [x] Manual test in staging
+## 测试计划
+- [x] 重试次数的单元测试
+- [x] 使用返回 500 的 mock 服务器做集成测试
+- [x] 在预发布环境手动测试
 ```
 
-### 4. Don't Take Feedback Personally
+### 4. 不要把反馈当成针对个人
 
-Reviews are about making the product better, not about you. If you feel defensive, step away for 10 minutes before responding.
+审查是为了让产品更好，不是针对你。如果感到不适，先离开 10 分钟再回来回复。
 
-## TL;DR
+## 总结
 
-Keep PRs small, reviews respectful, and communication clear. Code review is a conversation, not a gate.
+PR 要小、审查要尊重、沟通要清晰。代码审查是一场对话，不是一道关卡。
 
 ---
 
-*What are your code review pet peeves?*
+*你有什么代码审查的槽点？欢迎分享！*
