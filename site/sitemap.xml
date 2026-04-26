@@ -5,19 +5,19 @@
          <lastmod>2026-04-26</lastmod>
     </url>
     <url>
+         <loc>https://example.com/blog/algorithms/</loc>
+         <lastmod>2026-04-26</lastmod>
+    </url>
+    <url>
          <loc>https://example.com/blog/blog/</loc>
          <lastmod>2026-04-26</lastmod>
     </url>
     <url>
-         <loc>https://example.com/blog/blog/posts/code-review-best-practices/</loc>
+         <loc>https://example.com/blog/projects/</loc>
          <lastmod>2026-04-26</lastmod>
     </url>
     <url>
-         <loc>https://example.com/blog/blog/posts/getting-started-with-mkdocs-material/</loc>
-         <lastmod>2026-04-26</lastmod>
-    </url>
-    <url>
-         <loc>https://example.com/blog/blog/posts/python-decorators-explained/</loc>
+         <loc>https://example.com/blog/techstack/</loc>
          <lastmod>2026-04-26</lastmod>
     </url>
 </urlset>
