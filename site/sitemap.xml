@@ -13,11 +13,19 @@
          <lastmod>2026-04-26</lastmod>
     </url>
     <url>
-         <loc>https://example.com/blog/projects/</loc>
+         <loc>https://example.com/blog/devops/</loc>
          <lastmod>2026-04-26</lastmod>
     </url>
     <url>
-         <loc>https://example.com/blog/techstack/</loc>
+         <loc>https://example.com/blog/python/</loc>
+         <lastmod>2026-04-26</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/blog/software-engineering/</loc>
+         <lastmod>2026-04-26</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/blog/tools/</loc>
          <lastmod>2026-04-26</lastmod>
     </url>
 </urlset>

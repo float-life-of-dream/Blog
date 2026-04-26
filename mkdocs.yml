@@ -66,9 +66,11 @@ markdown_extensions:
 nav:
   - 首页: index.md
   - 博客: blog/index.md
-  - 项目: projects/index.md
+  - Python: python/index.md
+  - 软件工程: software-engineering/index.md
   - 算法: algorithms/index.md
-  - 技术栈: techstack/index.md
+  - DevOps: devops/index.md
+  - 工具: tools/index.md
 
 extra:
   social:
